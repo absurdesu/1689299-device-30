@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Евгений](https://up.htmlacademy.ru/htmlcss/30/user/1689299).
-* Наставник: `[Роман Марченко](https://htmlacademy.ru/profile/id505487)`.
+* Наставник: [Роман Марченко](https://htmlacademy.ru/profile/id505487).
 
 ---
 
