@@ -63,11 +63,17 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.button {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .visually-hidden {
@@ -119,18 +125,6 @@ img {
   letter-spacing: 0.2em;
 }
 
-.header-menu a:link,
-.main-navigation a:link,
-.catalog-menu a:link {
-  color: var(--basic-black);
-}
-
-.header-menu a:visited,
-.main-navigation a:visited,
-.catalog-menu a:visited {
-  color: var(--basic-black);
-}
-
 .header-menu a:hover,
 .main-navigation a:hover,
 .catalog-menu a:hover {
@@ -143,34 +137,24 @@ img {
   color: var(--basic-half-grey);
 }
 
+/* Promo Slider */
 
-
-/* Promo */
-
-.promo a:link {
+.promo-slider a:hover {
   color: var(--basic-black);
 }
 
-.promo a:visited {
-  color: var(--basic-black);
-}
-
-.promo a:hover {
-  color: var(--basic-black);
-}
-
-.promo a:active {
+.promo-slider a:active {
   color: var(--basic-half-grey);
 }
 
-.slider-number {
+.slide-number {
   font-size: 179px;
   line-height: 219px;
   text-transform: uppercase;
   color: var(--basic-white);
 }
 
-.promo h3 {
+.promo-slider h3 {
   font-size: 47px;
 }
 
@@ -179,11 +163,6 @@ img {
   font-size: 15px;
   font-weight: 300;
   line-height: 20.43px;
-}
-
-.promo-slider .button {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
 }
 
 .promo-slider dt {
@@ -200,19 +179,11 @@ img {
   font-weight: 300;
 }
 
-.promo ul {
+.promo-slider ul {
   list-style: none;
 }
 
 /* Popular */
-
-.popular a:link {
-  color: var(--basic-black);
-}
-
-.popular a:visited {
-  color: var(--basic-black);
-}
 
 .popular a:hover {
   color: var(--basic-grey);
@@ -232,14 +203,6 @@ img {
 
 /* Services */
 
-.services a:link {
-  color: var(--basic-black);
-}
-
-.services a:visited {
-  color: var(--basic-black);
-}
-
 .services a:hover {
   color: var(--basic-black);
 }
@@ -250,11 +213,6 @@ img {
 
 .services ul {
   list-style: none;
-}
-
-.services .button {
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
 }
 
 .services h3 {
@@ -277,19 +235,7 @@ img {
   list-style: none;
 }
 
-.partners img {
-  background-color: var(--basic-white);
-}
-
 /* Info */
-
-.info a:link {
-  color: var(--basic-black);
-}
-
-.info a:visited {
-  color: var(--basic-black);
-}
 
 .info a:hover {
   color: var(--basic-black);
@@ -317,20 +263,7 @@ img {
   line-height: 28px;
 }
 
-.info .button {
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
 /* Contacts */
-
-.contacts a:link {
-  color: var(--basic-black);
-}
-
-.contacts a:visited {
-  color: var(--basic-black);
-}
 
 .contacts a:hover {
   color: var(--basic-black);
@@ -352,23 +285,11 @@ img {
   font-weight: 300;
   line-height: 28px;
 }
-.contacts .button {
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
 
 /* Footer */
 
 .main-footer {
   background-color: var(--basic-dark);
-}
-
-.footer-menu-top a:link {
-  color: var(--basic-grey-light);
-}
-
-.footer-menu-top a:visited {
-  color: var(--basic-grey-light);
 }
 
 .footer-menu-top a:hover {
@@ -379,24 +300,14 @@ img {
   color: var(--basic-half-grey);
 }
 
-.footer-menu-bot a:link {
-  color: var(--basic-white);
-}
-
-.footer-menu-bot a:visited {
-  color: var(--basic-white);
-}
-
-.footer-menu-bot a:hover {
+.footer-menu-bottom a:hover {
   color: var(--basic-grey-light);
 }
 
-.footer-menu-bot a:active {
+.footer-menu-bottom a:active {
   color: var(--basic-half-grey);
 }
 
-.footer-phone a:link,
-.footer-phone a:visited,
 .footer-phone a:hover,
 .footer-phone a:active {
   color: var(--basic-white);
@@ -429,7 +340,7 @@ img {
   color: var(--basic-white)
 }
 
-.footer-menu-bot {
+.footer-menu-bottom {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
