@@ -76,6 +76,11 @@ img {
   text-transform: uppercase;
 }
 
+.page-title {
+  font-size: 47px;
+  line-height: 58px;
+}
+
 .visually-hidden {
   display: none;
 }
@@ -139,11 +144,11 @@ img {
 
 /* Promo Slider */
 
-.promo-slider a:hover {
+.promo-slide a:hover {
   color: var(--basic-black);
 }
 
-.promo-slider a:active {
+.promo-slide a:active {
   color: var(--basic-half-grey);
 }
 
@@ -284,6 +289,185 @@ img {
   font-size: 15px;
   font-weight: 300;
   line-height: 28px;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+/* Filters */
+
+.filters {
+  background-color: var(--basic-grey-light);
+}
+
+.filters h2 {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: #DCDCDC;
+}
+
+.filter legend {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-checkbox,
+.filter-radio {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.filter .button {
+  font: inherit;
+  border: none;
+}
+
+.filter .button:active {
+  opacity: 0.3;
+}
+
+/* Sort */
+
+.sort {
+  background-color: var(--basic-grey-light);
+}
+
+.sort h2 {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sort-method,
+.sort-order {
+  list-style: none;
+}
+
+.sort-item a {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  opacity: 0.3;
+}
+
+.sort-item a:hover {
+  opacity: 0.6;
+}
+
+.sort-item a:active,
+.sort-item-current a {
+  opacity: 1;
+}
+
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+}
+
+.catalog-item p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.catalog-item .button {
+  font: inherit;
+  border: none;
+}
+
+.catalog-item .button:active {
+  opacity: 0.3;
+}
+
+.button-compare {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  border: none;
+  background: none;
+  opacity: 0.5;
+}
+
+.button-compare:hover {
+  opacity: 1;
+}
+
+.button-compare:active {
+  opacity: 0.2;
+}
+
+.pagination-list {
+  list-style: none;
+  background-color: #EBEBEB;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pagination-page a {
+  opacity: 0.3;
+}
+
+.pagination-page a:hover {
+  opacity: 0.6;
+}
+
+.pagination-page a:active,
+.pagination-item-current a {
+  opacity: 1;
+}
+
+.pagination-button a:hover {
+  background-color: #D9D9D9;
+}
+
+.pagination-button a:active {
+  background-color: #D9D9D9;
+  opacity: 0.6;
 }
 
 /* Footer */
