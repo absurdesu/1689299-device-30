@@ -25,15 +25,15 @@
     </div>
 
     <ul class="header-menu">
-      <li><a href="#">Войти</a></li>
-      <li><a href="#">Сравнить</a></li>
-      <li><a href="#">Корзина</a></li>
+      <li class="header-menu-login"><a href="#">Войти</a></li>
+      <li class="header-menu-compare"><a href="#">Сравнить</a></li>
+      <li class="header-menu-cart"><a href="#">Корзина</a></li>
     </ul>
   </div>
 
   <nav class="main-navigation">
     <ul class="site-navigation">
-      <li class="left-column">
+      <li class="navigation-catalog">
         <a class="catalog-menu-link" href="catalog.html">Каталог товаров</a>
 
         <ul class="catalog-menu">
@@ -45,13 +45,13 @@
           <li><a class="catalog-menu-link" href="#">Квадрокоптеры</a></li>
         </ul>
       </li>
-      <li class="right-column">
+      <li class="navigation-delivery">
         <a href="#">Доставка</a>
       </li>
-      <li class="right-column">
+      <li class="navigation-warranty">
         <a href="#">Гарантия</a>
       </li>
-      <li class="right-column">
+      <li class="navigation-contacts">
         <a href="#">Контакты</a>
       </li>
     </ul>
@@ -73,8 +73,8 @@
 
       <div class="slide-description">
         <p class="slide-number">01</p>
-        <h3>Делай селфи, как Бен Стиллер!</h3>
-        <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+        <h3 class="slide-title">Делай селфи,<br> как Бен Стиллер!</h3>
+        <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a class="button" href="#">Подробнее</a>
         <dl>
           <dt>8,5 м</dt>
@@ -190,14 +190,14 @@
 
     <div class="service-buttons">
       <ul>
-        <li><a class="button" href="#">Доставка</a></li>
+        <li><a class="button button-active" href="#">Доставка</a></li>
         <li><a class="button" href="#">Гарантия</a></li>
         <li><a class="button" href="#">Кредит</a></li>
       </ul>
     </div>
 
     <div class="service-items">
-      <section class="service-item">
+      <section class="service-item service-item-active">
         <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </section>
@@ -243,32 +243,32 @@
   <div class="info-contacts-wrapper">
   <section class="info">
     <h2>О нас</h2>
-      <p>
-       Огромный выбор гаджетов не оставит равнодушным гика,
-       который есть в кажом из нас.
-      </p>
-      <p>
-        Мы может доставить ваш товар в самые отдаленные точки
-        России! DEVICE работает со многими транспортными компаниями:
-      </p>
-      <ul class="delivery-list">
-        <li class="delivery-item">Деловые линии</li>
-        <li class="delivery-item">Автотрейдинг</li>
-        <li class="delivery-item">ЖелДорЭкспедиция</li>
-      </ul>
-      <a class="button" href="#">Подробнее о нас</a>
+    <p>
+      Огромный выбор гаджетов не оставит равнодушным гика,
+      который есть в каждом из нас.
+    </p>
+    <p>
+      Мы можем доставить ваш товар в самые отдаленные точки
+      России! DEVICE работает со многими транспортными компаниями:
+    </p>
+    <ul class="delivery-list">
+      <li class="delivery-item">Деловые линии</li>
+      <li class="delivery-item">Автотрейдинг</li>
+      <li class="delivery-item">ЖелДорЭкспедиция</li>
+    </ul>
+    <a class="button" href="#">Подробнее о нас</a>
   </section>
 
   <section class="contacts">
     <h2>Контакты</h2>
-      <p>
-        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-        проверить работоспособность покупки. Всякое бывает.
-      </p>
-      <a href="#">
-        <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-      </a>
-      <a class="button" href="#">Напишите нам</a>
+    <p>
+      Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+      проверить работоспособность покупки. Всякое бывает.
+    </p>
+    <a href="#">
+      <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+    </a>
+    <a class="button" href="#">Напишите нам</a>
   </section>
   </div>
 </main>
@@ -294,6 +294,8 @@
     </ul>
 
     <p class="footer-phone">Тел.: <a class="footer-phone-number" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+
+    <img src="https://via.placeholder.com/80x7" alt="">
 
     <ul class="footer-social">
       <li>
