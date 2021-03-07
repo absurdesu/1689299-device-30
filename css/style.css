@@ -115,6 +115,9 @@ img {
 .page-catalog .breadcrumbs {
   grid-column: 1 / -1;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: left;
+  margin-right: auto;
 }
 
 .page-catalog .filters {
@@ -128,6 +131,8 @@ img {
 .page-catalog .catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 48px;
 }
 
 /* Header */
@@ -138,6 +143,10 @@ img {
   margin: 60px auto 0;
   padding: 44px 60px 50px;
   background-color: var(--special-yellow-light);
+}
+
+.inner-page .main-header {
+  min-height: 92px;
 }
 
 .main-header ul {
@@ -173,7 +182,12 @@ img {
 }
 
 .header-menu-login {
-  flex-grow: 1;
+  margin-right: auto;
+}
+
+.header-menu-log-out {
+  margin-left: 20px;
+  margin-right: auto;
 }
 
 .header-menu-cart {
@@ -236,6 +250,10 @@ img {
 
 .catalog-menu-link:hover .catalog-menu {
   display: block;
+}
+
+.log-out-link {
+  opacity: 0.3;
 }
 
 /* Promo Slider */
@@ -324,7 +342,7 @@ img {
   line-height: 15px;
   font-weight: 300;
   letter-spacing: 0.1em;
-  grid-row-start: 2;
+  grid-row: 2 / 3;
   margin: 0;
   padding: 0;
 }
@@ -535,6 +553,14 @@ img {
   padding: 0;
 }
 
+.breadcrumbs li {
+  margin-right: 40px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
 .breadcrumbs a {
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -599,6 +625,8 @@ img {
 
 .sort {
   background-color: var(--basic-grey-light);
+  display: flex;
+  align-items: center;
 }
 
 .sort h2 {
@@ -606,6 +634,8 @@ img {
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-left: 72px;
+  margin-right: 74px;
 }
 
 .sort-method,
@@ -613,6 +643,28 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-method {
+  margin-right: auto;
+}
+
+.sort-item {
+  margin-right: 30px;
+}
+
+.sort-item:last-child {
+  margin-right: 0;
+}
+
+.sort-order-item {
+  margin-right: 16px;
+}
+
+.sort-order-item:last-child {
+  margin-right: 0;
 }
 
 .sort-item a {
@@ -634,13 +686,21 @@ img {
 
 /* Catalog */
 
+.catalog {
+  padding: 69px 0 78px 72px;
+}
+
 .catalog-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item h3 {
   font-size: 18px;
   letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item p {
@@ -648,11 +708,37 @@ img {
   font-weight: 300;
   line-height: 18px;
   letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+.item-price-wrapper {
+  display: flex;
+  max-width: 361px;
+  align-content: flex-start;
+  margin-top: 30px;
+}
+
+
+.item-price-wrapper a {
+  margin-right: auto;
+}
+
+.item-price-wrapper p {
+  white-space: nowrap;
 }
 
 .catalog-item .button {
   font: inherit;
   border: none;
+}
+
+.catalog-item button {
+  display: none;
+}
+
+.catalog-item-image:hover button {
+  display: block;
 }
 
 .catalog-item .button:active {
@@ -683,6 +769,30 @@ img {
   margin: 0;
   padding: 0;
   background-color: #EBEBEB;
+  display: flex;
+  min-width: 760px;
+  min-height: 70px;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination-button.back {
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.pagination-button.forward {
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+.pagination-page {
+  margin-right: 30px;
+}
+
+.pagination-page:last-child {
+  margin-right: 0;
 }
 
 .pagination-item a {
@@ -731,8 +841,7 @@ img {
 }
 
 .footer-menu-top {
-  grid-column-start: 3;
-  grid-column-end: -1;
+  grid-column: 2 / -1;
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 15px;
   font-weight: 300;
