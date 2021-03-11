@@ -140,7 +140,6 @@ img {
   height: 100%;
   width: 100vw;
   left: -100vw;
-  right: inherit;
   z-index: -1;
 }
 
@@ -157,7 +156,6 @@ img {
   height: 100%;
   width: 100vw;
   left: -100vw;
-  right: inherit;
   z-index: -1;
 }
 
@@ -175,7 +173,6 @@ img {
   background-color: var(--basic-grey-light);
   height: 100%;
   width: 100vw;
-  left: inherit;
   right: -100vw;
   z-index: -1;
 }
