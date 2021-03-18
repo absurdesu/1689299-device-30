@@ -189,9 +189,9 @@ img {
 
 .main-header {
   width: 1040px;
-  min-height: 206px;
+  min-height: 220px;
   margin: 40px auto 0;
-  padding: 44px 60px 50px;
+  padding: 30px 60px 50px;
   background-color: var(--special-yellow-light);
 }
 
@@ -207,7 +207,7 @@ img {
 
 .header-logo {
   position: absolute;
-  margin-top: -64px;
+  margin-top: -48px;
 }
 
 .header-logo[href]:hover {
@@ -219,21 +219,24 @@ img {
 }
 
 .header-menu-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 500px;
-  gap: 100px;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
 }
 
 .header-search {
+  display: flex;
   position: relative;
-  padding-left: 25px;
+  width: 440px;
+  height: 50px;
+  margin-right: 125px;
 }
 
 .header-search::before {
   position: absolute;
-  top: 6px;
-  left: 0;
+  top: 18px;
+  left: 2px;
   width: 16px;
   height: 16px;
   content: "";
@@ -246,8 +249,16 @@ img {
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
-  border: 2px solid transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
   background-color: inherit;
+  flex-grow: 1;
+  padding-left: 40px;
+}
+
+.search-input:focus {
+  border-bottom: 2px solid var(--basic-black);
 }
 
 .search-input::placeholder {
@@ -272,13 +283,18 @@ img {
   padding: 10px 10px;
   border: 2px solid var(--basic-black);
   background-color: inherit;
+  width: 84px;
+  height: 50px;
+  outline: none;
 }
+
 
 .search-input:focus + .search-button,
 .search-button:hover,
 .search-button:active {
-  display: inline-block;
+  display: block;
 }
+
 
 .search-button:hover {
   color: var(--basic-white);
@@ -290,17 +306,20 @@ img {
   background-color: var(--basic-black);
 }
 
+
 .header-menu {
   display: flex;
   justify-content: space-between;
+  flex-grow: 1;
 }
+
+.header-menu a {
+  position: relative;
+}
+
 
 .header-menu-login {
-  margin-left: 24px;
-}
-
-.header-menu a{
-  position: relative;
+  margin-right: auto;
 }
 
 .header-menu-login a::before {
@@ -314,13 +333,14 @@ img {
   background-repeat: no-repeat;
 }
 
+
 .header-menu-log-out {
   margin-left: 20px;
   margin-right: auto;
 }
 
 .header-menu-compare {
-  margin-left: 245px;
+  margin-right: 63px;
 }
 
 .header-menu-compare a::before {
@@ -332,10 +352,6 @@ img {
   content: "";
   background-image: url(../img/icon-chart-top.svg);
   background-repeat: no-repeat;
-}
-
-.header-menu-cart {
-  margin-left: auto;
 }
 
 .header-menu-cart a::before {
@@ -382,22 +398,35 @@ img {
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .catalog-menu {
   display: none;
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 20px;
+  left: -60px;
   z-index: 5;
+  width: 1040px;
+  height: 88px;
+  background-color: var(--special-yellow-light);
+  padding: 30px 60px 47px;
 }
 
-.catalog-menu-link:hover .catalog-menu {
-  display: block;
+.catalog-menu ul:not(:last-child) {
+  margin-right: 61px;
 }
 
-.navigation-delivery {
-  margin-left: 433px;
+.catalog-menu ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.catalog-menu-link:hover + .catalog-menu,
+.catalog-menu:hover {
+  display: flex;
 }
 
 .navigation-warranty {
@@ -405,7 +434,8 @@ img {
 }
 
 .navigation-contacts {
-  margin-left: 111px;
+  margin-left: 106px;
+  margin-right: -5px;
 }
 
 .header-menu a:hover,
@@ -569,6 +599,7 @@ img {
 }
 
 .promo-buttons button {
+  display: block;
   position: relative;
   padding: 0;
   width: 12px;
@@ -588,7 +619,6 @@ img {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
 }
 
@@ -826,17 +856,17 @@ img {
 
 .partners-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.partners-link img:last-child {
-  display: none;
+.partners-link img {
+  filter: grayscale(1);
+  opacity: 0.2;
 }
-.partners-link:hover img:last-child {
-  display: block;
-}
-.partners-link:hover img:first-child {
-  display: none;
+
+.partners-link:hover img {
+  filter: none;
+  opacity: 1;
 }
 
 .partners ul {
