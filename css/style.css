@@ -231,7 +231,7 @@ img {
   margin-right: auto;
 }
 
-.header-menu-profile a::before {
+.header-menu-profile::before {
   position: absolute;
   top: 4px;
   left: -25px;
@@ -242,7 +242,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.header-menu-login a::before {
+.header-menu-login::before {
   position: absolute;
   top: 4px;
   left: -25px;
@@ -262,7 +262,7 @@ img {
   margin-right: 65px;
 }
 
-.header-menu-compare a::before {
+.header-menu-compare::before {
   position: absolute;
   top: 4px;
   left: -26px;
@@ -273,7 +273,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.header-menu-cart a::before {
+.header-menu-cart::before {
   position: absolute;
   top: 5px;
   left: -22px;
@@ -1276,6 +1276,20 @@ img {
   display: block;
 }
 
+.color-label:hover::before,
+.color-label:hover::after,
+.bt-labe:hover::before,
+.bt-labe:hover::after {
+  opacity: 0.6;
+}
+
+.color-label:active::before,
+.color-label:active::after,
+.bt-labe:active::before,
+.bt-labe:active::after {
+  opacity: 1;
+}
+
 .filter .button {
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
@@ -1426,6 +1440,75 @@ img {
   margin: 0;
 }
 
+.image-buttons-container {
+  position: relative;
+}
+
+.catalog-item-image:hover {
+  opacity: 0.7;
+}
+
+.buttons-container {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 62px;
+  width: 200px;
+}
+
+.catalog-item-image:hover + .buttons-container,
+.buttons-container:hover {
+  display: flex;
+}
+
+.catalog-item .button {
+  position: relative;
+}
+
+.catalog-item .button::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 8px;
+  content: "";
+  background-color: var(--special-yellow-dark);
+  z-index: -1;
+}
+
+.catalog-item .button:hover::before {
+  height: 40px;
+}
+
+.catalog-item .button:active:not(::before) {
+  opacity: 0.3;
+}
+
+.button-compare {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.button-compare:hover {
+  opacity: 1;
+}
+
+.button-compare:active {
+  opacity: 0.2;
+}
+
 .item-price-container {
   display: flex;
   max-width: 361px;
@@ -1442,42 +1525,6 @@ img {
   white-space: nowrap;
 }
 
-.catalog-item .button {
-  font: inherit;
-  border: none;
-}
-
-.catalog-item button {
-  display: none;
-}
-
-.catalog-item-image:hover button {
-  display: block;
-}
-
-.catalog-item .button:active {
-  opacity: 0.3;
-}
-
-.button-compare {
-  font-family: "Open Sans", "Tahoma", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 18px;
-  letter-spacing: 0.1em;
-  border: none;
-  background: none;
-  opacity: 0.5;
-}
-
-.button-compare:hover {
-  opacity: 1;
-}
-
-.button-compare:active {
-  opacity: 0.2;
-}
-
 .pagination-list {
   list-style: none;
   margin: 0;
@@ -1492,13 +1539,19 @@ img {
   grid-row: -2 / -1;
 }
 
+.pagination-button {
+  width: 120px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pagination-button.back {
-  margin-left: 30px;
   margin-right: auto;
 }
 
 .pagination-button.forward {
-  margin-right: 30px;
   margin-left: auto;
 }
 
@@ -1530,12 +1583,15 @@ img {
   opacity: 1;
 }
 
-.pagination-button a:hover {
+.pagination-button:hover {
   background-color: #D9D9D9;
 }
 
-.pagination-button a:active {
+.pagination-button:active {
   background-color: #D9D9D9;
+}
+
+.pagination-button:active a {
   opacity: 0.6;
 }
 
@@ -1590,6 +1646,7 @@ img {
 
 .footer-menu-login {
   position: relative;
+  margin-right: 63px;
 }
 
 .footer-menu-login::before {
