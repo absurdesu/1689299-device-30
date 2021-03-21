@@ -26,16 +26,16 @@
     </form>
 
     <ul class="header-menu">
-      <li>
-        <a class="header-menu-login" href="#">Войти</a>
+      <li class="header-menu-login">
+        <a class="header-menu-login-link" href="#">Войти</a>
       </li>
 
-      <li>
-        <a class="header-menu-compare" href="#">Сравнить</a>
+      <li class="header-menu-compare">
+        <a class="header-menu-compare-link" href="#">Сравнить</a>
       </li>
 
-      <li>
-        <a class="header-menu-cart" href="#">Корзина</a>
+      <li class="header-menu-cart">
+        <a class="header-menu-cart-link" href="#">Корзина</a>
       </li>
     </ul>
   </div>
@@ -335,5 +335,38 @@
     </a>
   </div>
 </footer>
+
+<section class="modal modal-map">
+  <h2 class="visually-hidden">Карта</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473672!2d37.527429316044476!3d55.6870340045298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1616328145232!5m2!1sen!2sru" width="960" height="572" title="Карта офиса по адресу улица Строителей, 15"></iframe>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
+
+<section class="modal modal-feedback">
+  <h2 class="visually-hidden">Напишите нам</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <fieldset>
+      <div class="name-email-container">
+        <div class="name-container">
+          <label for="name">Ваше имя:</label>
+          <input class="name-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+        </div>
+
+        <div class="e-mail-container">
+          <label for="e-mail">Ваш e-mail:</label>
+          <input class="e-mail-input" type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+        </div>
+      </div>
+
+      <div class="message-container">
+        <label for="message">Текст письма:</label>
+        <textarea class="message-input" type="text" name="message" id="message" placeholder="В свободной форме"></textarea>
+      </div>
+    </fieldset>
+
+    <button class="button" type="submit">Отправить</button>
+  </form>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
 </body>
 </html>
