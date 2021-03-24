@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -201,32 +202,33 @@
   </section>
 
   <section class="services">
+    <div class="services-wrapper">
+      <h2 class="visually-hidden">Услуги</h2>
 
-    <h2 class="visually-hidden">Услуги</h2>
+      <div class="service-buttons">
+        <ul>
+          <li><a class="button current-button" href="#">Доставка</a></li>
+          <li><a class="button" href="#">Гарантия</a></li>
+          <li><a class="button" href="#">Кредит</a></li>
+        </ul>
+      </div>
 
-    <div class="service-buttons">
-      <ul>
-        <li><a class="button current-button" href="#">Доставка</a></li>
-        <li><a class="button" href="#">Гарантия</a></li>
-        <li><a class="button" href="#">Кредит</a></li>
-      </ul>
-    </div>
+      <div class="service-items">
+        <section class="service-item delivery service-item-active">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему <br>подъезду совершенно бесплатно! Ведь мы неплохо <br>заработаем, поднимая его на ваш этаж.</p>
+        </section>
 
-    <div class="service-items">
-      <section class="service-item delivery service-item-active">
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему <br>подъезду совершенно бесплатно! Ведь мы неплохо <br>заработаем, поднимая его на ваш этаж.</p>
-      </section>
+        <section class="service-item warranty">
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
+        </section>
 
-      <section class="service-item warranty">
-        <h3>Гарантия</h3>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
-      </section>
-
-      <section class="service-item credit">
-        <h3>Кредит</h3>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты <br>подберут для вас наиболее выгодные <br>условия кредита. Выгодные для нашего банка, разумеется.</p>
-      </section>
+        <section class="service-item credit">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты <br>подберут для вас наиболее выгодные <br>условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </section>
+      </div>
     </div>
   </section>
 
@@ -345,23 +347,23 @@
 
 <section class="modal modal-feedback">
   <h2 class="visually-hidden">Напишите нам</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
     <fieldset>
       <div class="inputs-container">
         <div class="input-container">
           <label for="name">Ваше имя:</label>
-          <input class="feedback-input" type="text" name="name" id="name" placeholder="Имя Фамилия" autofocus required>
+          <input class="feedback-input" type="text" name="name" id="name" placeholder="Имя Фамилия" autofocus>
         </div>
 
         <div class="input-container">
           <label for="email">Ваш e-mail:</label>
-          <input class="feedback-input" type="email" name="email" id="email" placeholder="email@example.com" required>
+          <input class="feedback-input" type="email" name="email" id="email" placeholder="email@example.com">
         </div>
       </div>
 
       <div class="textarea-container">
         <label for="message">Текст письма:</label>
-        <textarea class="feedback-textarea" name="message" id="message" placeholder="В свободной форме" required></textarea>
+        <textarea class="feedback-textarea" name="message" id="message" placeholder="В свободной форме"></textarea>
       </div>
     </fieldset>
 
